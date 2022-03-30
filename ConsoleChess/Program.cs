@@ -11,8 +11,19 @@ namespace ConsoleChess
             try
             {
                 PartidaDeXadrez game = new PartidaDeXadrez();
+                while (!game.finished)
+                {
+                    Console.Clear();
 
-                Tela.viewTab(game.tab);
+                    Tela.viewTab(game.tab);
+
+                    Console.Write("Origem:");
+                    Position origin = Tela.readChessPosition().toPosition();
+                    Console.Write("Destino:");
+                    Position destination = Tela.readChessPosition().toPosition();
+
+                    game.executeMoviment(origin, destination);
+                }
             }
             catch (TabuleiroException ex)
             {

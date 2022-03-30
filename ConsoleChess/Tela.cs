@@ -1,4 +1,5 @@
 ﻿using tabuleiro;
+using chess;
 using System;
 
 namespace ConsoleChess
@@ -40,6 +41,14 @@ namespace ConsoleChess
                 Console.Write(piece);
                 Console.ForegroundColor = aux;
             }
+        }
+
+        public static PosicaoXadrez readChessPosition()
+        {
+            string s = Console.ReadLine();
+            char column = s[0];
+            int line = int.Parse(s[1] + "");
+            return new PosicaoXadrez(column, line);
         }
     }
 }

@@ -5,15 +5,17 @@ namespace chess
 {
     class PartidaDeXadrez
     {
-        public Tabuleiro tab;
+        public Tabuleiro tab { get; private set; }
         private int turn;
         private Color actualPlayer;
+        public bool finished { get; private set; }
 
         public PartidaDeXadrez()
         {
             tab = new(8, 8);
             turn = 1;
             actualPlayer = Color.White;
+            finished = false;
             createAllPieces();
         }
 
