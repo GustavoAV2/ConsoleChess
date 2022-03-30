@@ -17,5 +17,10 @@ namespace tabuleiro
             this.color = color;
             this.position = null;
         }
+
+        public void addQtdMove()
+        {
+            qtMove++;
+        }
     }
 }
