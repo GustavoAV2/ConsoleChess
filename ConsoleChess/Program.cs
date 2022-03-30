@@ -8,13 +8,24 @@ namespace ConsoleChess
     {
         static void Main(string[] args)
         {
-            Tabuleiro tab = new Tabuleiro(8, 8);
+            try
+            {
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-            tab.insertPiece(new Rei(tab, Color.White), new Position(2, 4));
-            tab.insertPiece(new Torre(tab, Color.White), new Position(1, 3));
-            tab.insertPiece(new Torre(tab, Color.White), new Position(0, 0));
+                tab.insertPiece(new Torre(tab, Color.Black), new Position(0, 0));
+                tab.insertPiece(new Torre(tab, Color.Black), new Position(1, 3));
+                tab.insertPiece(new Rei(tab, Color.Black), new Position(0, 2));
 
-            Tela.viewTab(tab);
+                tab.insertPiece(new Torre(tab, Color.White), new Position(3, 5));
+                //tab.insertPiece(new Torre(tab, Color.White), new Position(0, 0));
+                //tab.insertPiece(new Rei(tab, Color.White), new Position(0, 0));
+
+                Tela.viewTab(tab);
+            }
+            catch (TabuleiroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             Console.ReadLine();
         }
