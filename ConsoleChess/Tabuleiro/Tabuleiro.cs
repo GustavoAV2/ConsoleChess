@@ -60,7 +60,7 @@ namespace tabuleiro
             }
         }
 
-        private bool validatePosition(Position pos)
+        public bool validatePosition(Position pos)
         {
             if (pos.Line < 0 || pos.Line >= line || pos.Column < 0 || pos.Column >= columns)
             { return false; }
