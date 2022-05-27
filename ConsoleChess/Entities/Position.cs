@@ -1,4 +1,4 @@
-﻿namespace tabuleiro
+﻿namespace entities
 {
     class Position
     {

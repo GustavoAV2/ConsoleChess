@@ -1,7 +1,7 @@
 ﻿using System;
 using tabuleiro;
 
-namespace tabuleiro
+namespace entities
 {
     abstract class Piece
     {

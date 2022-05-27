@@ -1,7 +1,7 @@
-﻿using tabuleiro;
+﻿using entities;
 
 
-namespace chess
+namespace domain
 {
     class Rei : Piece
     {

@@ -1,5 +1,5 @@
-﻿using tabuleiro;
-using chess;
+﻿using entities;
+using domain;
 using System;
 
 namespace ConsoleChess

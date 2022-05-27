@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace tabuleiro
+namespace entities.exceptions
 {
     class TabuleiroException : Exception
     {

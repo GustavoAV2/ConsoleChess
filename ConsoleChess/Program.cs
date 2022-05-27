@@ -1,6 +1,7 @@
-﻿using chess;
-using tabuleiro;
+﻿using domain;
 using System;
+using entities;
+using entities.exceptions;
 
 namespace ConsoleChess
 {

@@ -1,5 +1,5 @@
 ﻿
-namespace tabuleiro
+namespace entities
 {
     class Tabuleiro
     {
