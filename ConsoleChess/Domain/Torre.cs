@@ -70,7 +70,7 @@ namespace domain
                 }
                 pos.Column = pos.Column - 1;
             }
-
+            return mat;
         }
     }
 }

@@ -20,6 +20,12 @@ namespace ConsoleChess
 
                     Console.Write("Origem:");
                     Position origin = Tela.readChessPosition().toPosition();
+
+                    bool[,] possiblePositions = game.tab.piece(origin).possibleMoves();
+
+                    Console.Clear();
+                    Tela.viewTab(game.tab, possiblePositions);
+
                     Console.Write("Destino:");
                     Position destination = Tela.readChessPosition().toPosition();
 

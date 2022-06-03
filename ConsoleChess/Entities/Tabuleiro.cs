@@ -1,4 +1,5 @@
-﻿
+﻿using entities.exceptions;
+
 namespace entities
 {
     class Tabuleiro
